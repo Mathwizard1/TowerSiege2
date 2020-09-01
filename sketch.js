@@ -46,7 +46,6 @@ function show(){
   }
 
 function draw() {
-  if(Img())
   background(bg,bg,bg);
 
   {fill("blue");
@@ -71,7 +70,7 @@ function draw() {
 
 function mouseDragged(){
   if (gameState=="onSling"){
-      Matter.Body.setPosition(ball.body,{x: mouseX , y: mouseY});
+      Matter.Body.setPosition(ball.body,{x:mouseX,y:mouseY});
   }
 
 }
@@ -89,7 +88,7 @@ function keyPressed(){
   }
 }
  function Img(){
-  var h=hour();
+  var h = hour();
   if(h>=06&&h<=18){
     bg= Number(200);
   }
