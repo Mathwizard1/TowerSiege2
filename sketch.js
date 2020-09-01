@@ -100,5 +100,5 @@ async function Img(){
   else{
     bg= Number(0);
   }
-  return (bg);
+  return(bg);
 }
