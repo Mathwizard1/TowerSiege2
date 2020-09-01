@@ -88,8 +88,7 @@ function keyPressed(){
      gameState="onSling";
   }
 }
-
-async function Img(){
+ function Img(){
   var h=hour();
   if(h>=06&&h<=18){
     bg= Number(200);
