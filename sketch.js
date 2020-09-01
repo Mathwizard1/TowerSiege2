@@ -90,11 +90,8 @@ function keyPressed(){
 }
 
 async function Img(){
-  var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
-  var responseJSON = await response.json();
-  var datetime = responseJSON.datetime;
-  var hour = datetime.slice(11,13);
-  if(hour>=06&&hour<=18){
+  var h=hour();
+  if(h>=06&&h<=18){
     bg= Number(200);
   }
   else{
